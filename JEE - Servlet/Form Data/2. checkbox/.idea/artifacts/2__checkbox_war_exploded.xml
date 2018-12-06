@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="2. checkbox:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/2__checkbox_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="2. checkbox/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="2. checkbox" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

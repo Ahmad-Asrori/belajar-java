@@ -14,14 +14,14 @@ package com.asrori.concureency;
 
 import java.util.Random;
 
-public class LivenessDanDeadlock implements Runnable {
+public class LivenessDanDeadlock_1 implements Runnable {
     private static final Object resource1 = new Object();
     private static final Object resource2 = new Object();
     private final Random random = new Random(System.currentTimeMillis());
 
     public static void main(String[] args) {
-        Thread myThread1 = new Thread(new LivenessDanDeadlock(), "thread-1");
-        Thread myThread2 = new Thread(new LivenessDanDeadlock(), "thread-2");
+        Thread myThread1 = new Thread(new LivenessDanDeadlock_1(), "thread-1");
+        Thread myThread2 = new Thread(new LivenessDanDeadlock_1(), "thread-2");
         myThread1.start();
         myThread2.start();
     }

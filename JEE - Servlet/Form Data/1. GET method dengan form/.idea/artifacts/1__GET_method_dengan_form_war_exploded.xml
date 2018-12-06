@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="1. GET method dengan form:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/1__GET_method_dengan_form_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="1. GET method dengan form/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="1. GET method dengan form" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

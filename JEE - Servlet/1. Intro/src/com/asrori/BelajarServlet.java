@@ -50,7 +50,6 @@ public class BelajarServlet extends HttpServlet{
         doPost tergantung dari tipe request yang kita terima dari client
 
         method doGet() dan doPost() adalah method yang paling sering kita gunakan disetiap melayani request dari client
-
      */
 
     @Override
@@ -58,16 +57,30 @@ public class BelajarServlet extends HttpServlet{
 
     }
 
+    /*
+        GET request dihasilkan dari sebuah request dari sebuah URL atau dari sebuah HTML form yang tidak ditentukan
+        methodnya dan itu harus ditangani dengan method doGet()
+     */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
     }
 
+    /*
+        POST request dihasilkan dari sebuah request dari sebuah HTML from yang ditentukan POST sebagai methodnya
+        dan itu harus di tangani dengan method doPOst()
+     */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
     }
 
+    /*
+        method destroy() dipanggil hanya satu kali saat end of lifecycle servlet. method ini memberikan kita kesempatan
+        untuk menutup koneksi dengan database, menghentikan background thread, menulis daftar cookies atau menghitung
+        hit ke disk dan melakukan pekerjaan akhir lainnya. setelah method destroy() dipanggil. objek servlet ditandai
+        untuk dihapus oleh GC
+     */
     @Override
     public void destroy() {
 
